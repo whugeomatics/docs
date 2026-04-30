@@ -245,7 +245,7 @@ mvn clean deploy -P release
 - **发布过程中需输入GPG密码（务必记牢）**。
 
 发布过程是异步的，需要等待一段时间，直到发布完成。
-![发布成功](../.images/published.png)
+![发布成功](./images/published.png)
 
 ** 发布失败，需手动在`Deployments`中进行Drop操作，才能再次发布，即同一版本只能发布一次。 **
-![发布失败](../.images/drop.png)
+![发布失败](./images/drop.png)
