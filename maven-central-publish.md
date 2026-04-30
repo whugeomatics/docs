@@ -16,7 +16,7 @@
 | 使用 GitLab | io.gitlab.用户名                  | io.gitlab.myname             |
 
 登录后进入 `Publish → Namespaces` 页面，点击 `Register New Namespace`：
-![创建/认证Namespace](../.images/namespace.png)
+![创建/认证Namespace](./images/namespace.png)
 
 **注意：需要按照页面的提示在GitHub上创建一个项目验证Namespace，验证通过后才可后续进行发布**
 
@@ -35,7 +35,7 @@ gpg --list-keys
 gpg --keyserver keyserver.ubuntu.com --send-keys 你的公钥ID
 ```
 
-![你的公钥ID](../.images/gpg.png)
+![你的公钥ID](./images/gpg.png)
 > 图片里**红色框所在的位置**即为公钥ID </br>
 **使用与 Sonatype 账号相同的邮箱**，并妥善保管私钥和密码</br>
 > 在创建公私钥的过程中会要求输入密码，这个密码要记好，后续deploy到Maven Central需要使用
@@ -48,7 +48,7 @@ gpg --keyserver keyserver.ubuntu.com --send-keys 你的公钥ID
 
 #### 创建 GPG 密钥对
 
-![创建密钥对](../.images/add-gpg.png)
+![创建密钥对](./images/add-gpg.png)
 
 #### 添加 GPG 密钥到公共密钥服务器
 
@@ -67,10 +67,10 @@ gpg --keyserver hkp://keyserver.ubuntu.com --send-keys 你的公钥ID
 ## 4. 生成 User Token
 
 进入 Central Portal 的 Account 页面，点击 `Generate User Token`，复制生成的用户名和密码，用于构建工具的身份认证。
-![创建Token](../.images/token.png)
+![创建Token](./images/token.png)
 
 点击 "Generate Token"后，会看到如下提示：
-![重要信息](../.images/view-token.png)
+![重要信息](./images/view-token.png)
 
 **注意：**
 
